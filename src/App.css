@@ -1,0 +1,78 @@
+.app {
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /*  horizontal  */
+    /* flex-direction: column;  vertical */
+    align-items: center;
+
+}
+
+#container {
+    background-color: black;
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.792);
+
+}
+
+h3 {
+    color: aqua;
+    padding-left: 5px;
+}
+
+#input {
+
+    height: 50px;
+    width: 90%;
+    border-radius: 15px;
+    margin: 10px;
+    border: solid;
+    font-size: large;
+    text-align: right;
+    padding-right: 5px;
+    padding-left: 8px;
+    background-color: beige;
+}
+
+#clear {
+
+    grid-column: span 2;
+}
+
+#ans {
+
+    grid-column: span 2;
+    color: rgb(227, 34, 34);
+
+}
+
+/* #container{
+   
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0, auto;
+    ;
+    border-radius: 15px;
+    background-color: black;
+}  */
+#keyboard {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 10px;
+    border-radius: 30px;
+    padding: 40px 20px 30px
+}
+
+.button {
+    border-radius: 20px;
+    background-color: rgb(49, 48, 46);
+    font-size: 40px;
+    height: 70px;
+    color: rgba(31, 239, 239, 0.943);
+
+}
