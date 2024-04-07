@@ -1,7 +1,9 @@
+
 import './App.css';
 import { useState } from 'react';
 
 function App() {
+
   const [result, setResult] = useState("")
 
   const Click = (e) => {
@@ -13,13 +15,17 @@ function App() {
   }
 
   const backspace = (e) => {
+
     setResult(result.slice(0, result.length - 1)) // 0,-1
+
   }
 
   const Calculate = () => {
+
     try {
       setResult(eval(result).toString())
     }
+
     catch (e) {
       setResult("Error")
     }
